@@ -1,0 +1,157 @@
+import React, { useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Architechure from "../assets/img3/architechure.svg";
+import deviceIcon from "../assets/img3/deviceicon.svg";
+import "../assets/css/iotarchitecture.css";
+
+// ✅ Import AOS
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+const IotArchitecture = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration (1s)
+      once: true, // animate only once
+      offset: 100, // trigger point
+    });
+  }, []);
+
+  return (
+    <div className="iot-bg py-5 text-center">
+      {/* Title */}
+      <h3
+        className="fw-bold text-white mb-5"
+        style={{
+          fontFamily: "Poppins, sans-serif",
+          fontSize: "clamp(20px, 4vw, 36px)",
+        }}
+        data-aos="fade-up"
+      >
+        How The IoT Ecosystem Works
+      </h3>
+
+      {/* Center Circle with Laptop */}
+      <div
+        className="position-relative d-flex justify-content-center align-items-center"
+        data-aos="zoom-in"
+      >
+        <div className="col-lg-12 col-md-12 d-flex justify-content-center mt-5">
+          <img
+            src={Architechure}
+            alt="Laptop"
+            className="rounded-4 laptop-bg-animation"
+            style={{ maxHeight: "700px" }}
+          />
+        </div>
+      </div>
+
+      {/* Bottom Info Section */}
+      <div className="row mt-0 mx-lg-5 text-start col-12 p-lg-5 mx-2">
+        {/* Devices and Sensors */}
+        <div className="col-md-4 mb-4" data-aos="fade-right">
+          <h5
+            className="d-flex align-items-center text-white"
+            style={{ fontSize: "clamp(16px, 2.5vw, 20px)" }}
+          >
+            <img src={deviceIcon} alt="Devices" className="icon-left" />
+            IoT Device & Hardware Integration
+          </h5>
+          <p
+            className="text-white"
+            style={{ fontSize: "clamp(13px, 2.2vw, 16px)", lineHeight: "150%" }}
+          >
+           We apply our expertise to select and integrate the right sensors, smart devices, and hardware components to create the essential physical foundation of your IoT solution. We handle everything from initial prototyping to full-scale deployment, meticulously ensuring that all devices work together seamlessly and efficiently within the larger ecosystem. This process guarantees a solid and reliable base for your entire system
+          </p>
+        </div>
+
+        {/* Connectivity */}
+        <div className="col-md-4 mb-4" data-aos="fade-up">
+          <h5
+            className="d-flex align-items-center text-white"
+            style={{ fontSize: "clamp(16px, 2.5vw, 20px)" }}
+          >
+            <img src={deviceIcon} alt="Connectivity" className="icon-left" />
+            IoT Connectivity & Networking
+          </h5>
+          <p
+            className="text-white"
+            style={{ fontSize: "clamp(13px, 2.2vw, 16px)", lineHeight: "150%" }}
+          >
+         We design and implement a robust and secure communication network that effectively connects your devices to the cloud. Whether utilizing technologies such as Wi-Fi, Bluetooth, or cellular networks, we meticulously ensure reliable, high-speed, and low-latency data transmission. Our technique offers a responsive and highly efficient system that ensures your data flows without interruption.
+          </p>
+        </div>
+
+        {/* Gateways */}
+        <div className="col-md-4 mb-4" data-aos="fade-left">
+          <h5
+            className="d-flex align-items-center text-white"
+            style={{ fontSize: "clamp(16px, 2.5vw, 20px)" }}
+          >
+            <img src={deviceIcon} alt="Gateways" className="icon-left" />
+            IoT Software and App Development
+          </h5>
+          <p
+            className="text-white"
+            style={{ fontSize: "clamp(13px, 2.2vw, 16px)", lineHeight: "150%" }}
+          >
+           Our considerable experience in both online and mobile app development allows us to construct useful, user-friendly front-end applications for managing, controlling, and visualising data from all of your IoT devices. These tools give you the ability to monitor your entire system and obtain actionable insights straight from your fingertips
+          </p>
+        </div>
+
+        {/* Cloud Infrastructure */}
+        <div className="col-md-4 mb-4" data-aos="fade-right">
+          <h5
+            className="d-flex align-items-center text-white"
+            style={{ fontSize: "clamp(16px, 2.5vw, 20px)" }}
+          >
+            <img src={deviceIcon} alt="Cloud" className="icon-left" />
+            IoT Cloud & Data Management
+          </h5>
+          <p
+            className="text-white"
+            style={{ fontSize: "clamp(13px, 2.2vw, 16px)", lineHeight: "150%" }}
+          >
+           Our strong cloud computing and DevOps skills are utilised to build a secure and flexible cloud system capable of storing huge volumes of data generated by your IoT systems. We ensure that your data is constantly accessible, secure, and organised. This underlying work ensures that strong data processing and long-term insights run smoothly.
+          </p>
+        </div>
+
+        {/* Edge Computing */}
+        <div className="col-md-4 mb-4" data-aos="fade-up">
+          <h5
+            className="d-flex align-items-center text-white"
+            style={{ fontSize: "clamp(16px, 2.5vw, 20px)" }}
+          >
+            <img src={deviceIcon} alt="Edge" className="icon-left" />
+            IoT Analytics & AI
+          </h5>
+          <p
+            className="text-white"
+            style={{ fontSize: "clamp(13px, 2.2vw, 16px)", lineHeight: "150%" }}
+          >
+            We use our data science and machine learning capabilities to turn raw IoT data into useful business knowledge. This strong feature lets you detect key patterns, optimise your operational procedures, and make smarter, more informed business decisions. Our analytics turn simple data points into a powerful tool for growth and efficiency.
+          </p>
+        </div>
+
+        {/* End-User Applications */}
+        <div className="col-md-4 mb-4" data-aos="fade-left">
+          <h5
+            className="d-flex align-items-center text-white"
+            style={{ fontSize: "clamp(16px, 2.5vw, 20px)" }}
+          >
+            <img src={deviceIcon} alt="Applications" className="icon-left" />
+            IoT Cybersecurity
+          </h5>
+          <p
+            className="text-white"
+            style={{ fontSize: "clamp(13px, 2.2vw, 16px)", lineHeight: "150%" }}
+          >
+           We expand our existing cybersecurity services to cover your complete IoT environment. Our comprehensive approach protects your entire network and data from all potential threats using powerful security measures and constant monitoring. Under our professional protection, you will be fully assured that your precious business information is in safe hands.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default IotArchitecture;
